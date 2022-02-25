@@ -10,10 +10,22 @@ export async function getStaticProps(arg) {
   }
 }
 
+export async function getStaticPaths() {
+  return {
+    paths: [
+      { params: {  } }
+    ],
+    fallback: true // false or 'blocking'
+  };
+}
 
-export default function Home() {
+
+export default function Home(props) {
   return (
     <div className="container">
+      <pre>
+        {JSON.stringify(props, null, 2)}
+      </pre>
       <Head>
         <title>Next.js Starter!</title>
         <link rel="icon" href="/favicon.ico" />
