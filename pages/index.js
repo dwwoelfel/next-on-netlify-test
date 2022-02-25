@@ -3,7 +3,7 @@ import Header from '@components/Header'
 import Footer from '@components/Footer'
 
 export async function getStaticProps(arg) {
-  console.log('arg', arg);
+  console.log('getStaticProps', arg);
   return {
     props: {}
   }
