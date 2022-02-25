@@ -13,7 +13,7 @@ export async function getStaticProps(arg) {
 export async function getStaticPaths() {
   return {
     paths: [
-      { params: { page: 1 } }
+      { params: { page: 'a' } }
     ],
     fallback: true // false or 'blocking'
   };
