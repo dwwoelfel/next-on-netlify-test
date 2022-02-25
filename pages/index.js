@@ -5,7 +5,8 @@ import Footer from '@components/Footer'
 export async function getStaticProps(arg) {
   console.log('getStaticProps', arg);
   return {
-    props: {}
+    props: {},
+    revalidate: 1
   }
 }
 
