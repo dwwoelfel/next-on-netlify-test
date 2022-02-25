@@ -2,24 +2,6 @@ import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
 
-export async function getStaticProps(arg) {
-  console.log('getStaticProps', arg);
-  return {
-    props: {},
-    revalidate: 1
-  }
-}
-
-export async function getStaticPaths() {
-  return {
-    paths: [
-      { params: {  } }
-    ],
-    fallback: true // false or 'blocking'
-  };
-}
-
-
 export default function Home(props) {
   return (
     <div className="container">
