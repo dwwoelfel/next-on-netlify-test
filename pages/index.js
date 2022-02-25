@@ -2,6 +2,14 @@ import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
 
+export async function getStaticProps(arg) {
+  console.log('arg', arg);
+  return {
+    props: {}
+  }
+}
+
+
 export default function Home() {
   return (
     <div className="container">
